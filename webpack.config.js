@@ -11,6 +11,9 @@ module.exports = {
     devServer: {
         static: "./dist",
         open: true,
+        server: {
+            type: "https"
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({
